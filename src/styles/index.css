@@ -476,7 +476,9 @@ img {
   .hero-content {
     padding: 0 6vw 6vh;
   }
-
+  .hero-location {
+    padding-top: 6rem;
+  }
   .hero-desc {
     font-size: 0.88rem;
     margin-bottom: 2rem;
@@ -485,6 +487,9 @@ img {
   .hero-pills {
     gap: 0.4rem;
     margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    text-align: left;
   }
 
   .pill {
