@@ -1,6 +1,7 @@
 import React from 'react'
 import SectionHeader from './SectionHeader'
 import FeatureCard from './FeatureCard'
+import OptimizedImage from './OptimizedImage'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const features = [
@@ -49,7 +50,12 @@ export default function WhyBower() {
             bushland, towering sandstone, and valleys that make the world feel very far away.
           </p>
           <div className="why-image">
-            <img src="/assets/bush-trail.jpg" alt="Bush walking trail near Bower Cottage" />
+            <OptimizedImage
+              src="/assets/bush-trail.jpg"
+              alt="Bush walking trail near Bower Cottage"
+              widths={[480, 800, 1600]}
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
           </div>
         </div>
         <div className="features-list">

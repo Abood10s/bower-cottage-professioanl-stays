@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import OptimizedImage from './OptimizedImage'
 
 export default function AccommodationCard({
   type,
@@ -15,10 +16,12 @@ export default function AccommodationCard({
     <div className="acc-card">
       {images.length > 0 && (
         <div className="acc-card-gallery">
-          <img
+          <OptimizedImage
             src={images[activeImg]}
             alt={`${name} - photo ${activeImg + 1}`}
             className="acc-card-img"
+            widths={[480, 800]}
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
           {images.length > 1 && (
             <div className="acc-gallery-dots">

@@ -1,6 +1,7 @@
 import React from 'react'
 import SectionHeader from './SectionHeader'
 import EnquiryForm from './EnquiryForm'
+import OptimizedImage from './OptimizedImage'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export default function Enquiry() {
@@ -32,7 +33,12 @@ export default function Enquiry() {
           </div>
 
           <div className="enquiry-image">
-            <img src="/assets/canyon-walk.jpg" alt="Grand Canyon walk, Blue Mountains" />
+            <OptimizedImage
+              src="/assets/canyon-walk.jpg"
+              alt="Grand Canyon walk, Blue Mountains"
+              widths={[480]}
+              sizes="(max-width: 768px) 100vw, 40vw"
+            />
           </div>
 
           <div className="enquiry-note">

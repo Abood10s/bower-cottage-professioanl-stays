@@ -1,4 +1,5 @@
 import React from 'react'
+import OptimizedImage from './OptimizedImage'
 
 
 const pills = [
@@ -12,7 +13,15 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-bg">
-        <img src="/assets/hero-landscape.jpg" alt="Blue Mountains landscape" className="hero-bg-img" />
+        <OptimizedImage
+              src="/assets/hero-landscape.jpg"
+              alt="Blue Mountains landscape"
+              className="hero-bg-img"
+              widths={[480, 800, 1600]}
+              sizes="100vw"
+              loading="eager"
+              fetchPriority="high"
+            />
       </div>
       <div className="hero-content">
         <p className="hero-location">Blackheath · Blue Mountains</p>
