@@ -1,21 +1,25 @@
-import React from 'react'
+import React from "react";
 
 const socialLinks = [
-  { label: 'Instagram', url: 'https://www.instagram.com/bower_cottage/' },
-  { label: 'Facebook', url: 'https://www.facebook.com/bowercottageaccommodation/' },
-  { label: 'Airbnb', url: 'https://airbnb.com/h/bowercottage' },
-]
+  { label: "Instagram", url: "https://www.instagram.com/bower_cottage/" },
+  {
+    label: "Facebook",
+    url: "https://www.facebook.com/bowercottageaccommodation/",
+  },
+  { label: "Airbnb", url: "https://airbnb.com/h/bowercottage" },
+];
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-logo">
         <span className="footer-logo-name">Bower Cottage</span>
-        <span className="logo-sub">Retreat</span>
+        <span className="logo-sub">Professional Stays</span>
       </div>
 
       <p className="footer-note">
-        Blackheath NSW 2785 &nbsp;·&nbsp; anna@bowercottage.com.au &nbsp;·&nbsp; +61 404 483 720
+        Blackheath NSW 2785 &nbsp;·&nbsp; anna@bowercottage.com.au &nbsp;·&nbsp;
+        +61 404 483 720
       </p>
 
       <ul className="footer-links">
@@ -28,5 +32,5 @@ export default function Footer() {
         ))}
       </ul>
     </footer>
-  )
+  );
 }
