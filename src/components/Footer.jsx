@@ -1,4 +1,5 @@
 import React from "react";
+import OptimizedImage from "./OptimizedImage";
 
 const socialLinks = [
   { label: "Instagram", url: "https://www.instagram.com/bower_cottage/" },
@@ -13,7 +14,13 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-logo">
-        <span className="footer-logo-name">Bower Cottage</span>
+        <OptimizedImage
+          src="/assets/logo.png"
+          alt="Bower Cottage"
+          className="logo-img footer-logo-img"
+          widths={[80, 160, 320]}
+          sizes="140px"
+        />
         <span className="logo-sub">Professional Stays</span>
       </div>
 

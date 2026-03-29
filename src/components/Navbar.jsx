@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import OptimizedImage from "./OptimizedImage";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +24,15 @@ export default function Navbar() {
     <>
       <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
         <a href="#" className="logo" onClick={closeMenu}>
-          <span className="logo-name">Bower Cottage</span>
+          <OptimizedImage
+            src="/assets/logo.png"
+            alt="Bower Cottage"
+            className="logo-img"
+            widths={[80, 160, 320]}
+            sizes="160px"
+            loading="eager"
+            fetchPriority="high"
+          />
           <span className="logo-sub">Professional Stays</span>
         </a>
 

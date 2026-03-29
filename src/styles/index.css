@@ -195,18 +195,28 @@ img {
   flex-direction: column;
   line-height: 1.1;
   text-decoration: none;
+  align-items: center;
   color: var(--dark);
 }
 
-.logo-name {
-  font-family: var(--font-serif);
-  font-size: 1.7rem;
-  font-weight: 400;
-  letter-spacing: 0.02em;
+.logo-img {
+  height: 82px;
+  width: auto;
+  margin-bottom: -15px;
+}
+
+@media (max-width: 540px) {
+  .logo-img {
+    height: 80px;
+    margin-bottom: -20px;
+  }
+  .logo-sub {
+    font-size: 0.35rem;
+  }
 }
 
 .logo-sub {
-  font-size: 0.55rem;
+  font-size: 0.65rem;
   letter-spacing: 0.28em;
   color: var(--maroon);
   font-weight: 500;
@@ -1313,11 +1323,10 @@ img {
   line-height: 1.1;
 }
 
-.footer-logo-name {
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
-  font-weight: 300;
-  color: var(--white);
+.footer-logo-img {
+  height: 42px;
+  width: auto;
+  filter: invert(1);
 }
 
 .footer .logo-sub {
