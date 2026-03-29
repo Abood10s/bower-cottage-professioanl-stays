@@ -12,12 +12,14 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <PricingStrip />
-      <WhyBower />
-      <Accommodation />
-      <Enquiry />
-      <Map />
+      <main>
+        <Hero />
+        <PricingStrip />
+        <WhyBower />
+        <Accommodation />
+        <Enquiry />
+        <Map />
+      </main>
       <Footer />
     </>
   );

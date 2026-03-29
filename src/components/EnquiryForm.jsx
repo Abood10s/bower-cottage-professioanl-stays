@@ -35,11 +35,12 @@ export default function EnquiryForm() {
   }
 
   return (
-    <form ref={formRef} onSubmit={handleSubmit} className="enquiry-form">
+    <form ref={formRef} onSubmit={handleSubmit} className="enquiry-form" aria-label="Enquiry form">
       <div className="form-grid">
         <div className="form-group">
-          <label>First Name</label>
+          <label htmlFor="first_name">First Name</label>
           <input
+            id="first_name"
             type="text"
             name="first_name"
             placeholder="Anna"
@@ -47,8 +48,9 @@ export default function EnquiryForm() {
           />
         </div>
         <div className="form-group">
-          <label>Last Name</label>
+          <label htmlFor="last_name">Last Name</label>
           <input
+            id="last_name"
             type="text"
             name="last_name"
             placeholder="Smith"
@@ -56,8 +58,9 @@ export default function EnquiryForm() {
           />
         </div>
         <div className="form-group">
-          <label>Email</label>
+          <label htmlFor="email">Email</label>
           <input
+            id="email"
             type="email"
             name="email"
             placeholder="anna@hospital.com.au"
@@ -65,32 +68,35 @@ export default function EnquiryForm() {
           />
         </div>
         <div className="form-group">
-          <label>Phone</label>
+          <label htmlFor="phone">Phone</label>
           <input
+            id="phone"
             type="tel"
             name="phone"
             placeholder="04XX XXX XXX"
           />
         </div>
         <div className="form-group">
-          <label>Check In</label>
+          <label htmlFor="check_in">Check In</label>
           <input
+            id="check_in"
             type="date"
             name="check_in"
             min={today}
           />
         </div>
         <div className="form-group">
-          <label>Check Out</label>
+          <label htmlFor="check_out">Check Out</label>
           <input
+            id="check_out"
             type="date"
             name="check_out"
             min={today}
           />
         </div>
         <div className="form-group full">
-          <label>Accommodation</label>
-          <select name="accommodation">
+          <label htmlFor="accommodation">Accommodation</label>
+          <select id="accommodation" name="accommodation">
             <option value="">Select accommodation...</option>
             <option value="Bower Above — $700/week">Bower Above — $700/week</option>
             <option value="Bower Cottage — $750/week">Bower Cottage — $750/week</option>
@@ -98,8 +104,9 @@ export default function EnquiryForm() {
           </select>
         </div>
         <div className="form-group full">
-          <label>Message</label>
+          <label htmlFor="message">Message</label>
           <textarea
+            id="message"
             name="message"
             placeholder="Tell us about your placement — duration, any specific requirements, or just say hello."
           />
@@ -116,12 +123,12 @@ export default function EnquiryForm() {
       </div>
 
       {status === 'success' && (
-        <p className="form-success">
+        <p className="form-success" role="alert">
           Thank you for your enquiry — Anna will be in touch shortly.
         </p>
       )}
       {status === 'error' && (
-        <p className="form-error">
+        <p className="form-error" role="alert">
           Something went wrong — please try again or email anna@bowercottage.com.au directly.
         </p>
       )}

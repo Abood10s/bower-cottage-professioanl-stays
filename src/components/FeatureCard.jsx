@@ -5,7 +5,7 @@ export default function FeatureCard({ icon, title, description }) {
     <div className="feature-card">
       <div className="feature-icon">{icon}</div>
       <div>
-        <h4 className="feature-card-title">{title}</h4>
+        <h3 className="feature-card-title">{title}</h3>
         <p className="feature-card-desc">{description}</p>
       </div>
     </div>
