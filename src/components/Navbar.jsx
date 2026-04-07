@@ -44,6 +44,12 @@ export default function Navbar() {
             <a href="#accommodation">Accommodation</a>
           </li>
           <li>
+            <a href="#booking">Booking</a>
+          </li>
+          <li>
+            <a href="#faq">FAQ</a>
+          </li>
+          <li>
             <a href="#enquiry" className="nav-cta">
               Enquire
             </a>
@@ -66,6 +72,12 @@ export default function Navbar() {
         </a>
         <a href="#accommodation" onClick={closeMenu}>
           Accommodation
+        </a>
+        <a href="#booking" onClick={closeMenu}>
+          Booking Conditions
+        </a>
+        <a href="#faq" onClick={closeMenu}>
+          FAQ
         </a>
         <a href="#enquiry" onClick={closeMenu}>
           Enquire About a Stay
