@@ -19,14 +19,14 @@ export default function Hero() {
         <div className="hero-left">
           <p className="hero-location">Blackheath · Blue Mountains</p>
           <h1 className="hero-title">
-            Your quiet place
+            A proper rest,
             <br />
-            <em>to breathe again.</em>
+            <em>Between Shifts.</em>
           </h1>
           <p className="hero-desc">
-            A peaceful, fully set-up retreat for medical professionals who need
-            real rest. No packing lists, no setup, no thinking just arrive,
-            exhale, and let the mountain air do the rest.
+            Fully furnished, weekly-cleaned accommodation for medical
+            professionals, locums,student doctors, and allied health workers -
+            set on the edge of the Blue Mountains National Park.
           </p>
           <div className="hero-actions">
             <a href="#enquiry" className="btn btn-teal">

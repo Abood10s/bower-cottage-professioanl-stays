@@ -6,7 +6,7 @@ import { useScrollReveal } from "../hooks/useScrollReveal";
 const features = [
   {
     number: "01",
-    title: "Genuinely Peaceful",
+    title: "The Proper Rest between shifts",
     description:
       "No traffic noise, no neighbours, no interruptions. Just birdsong, mountain air, and the kind of silence that actually lets you switch off.",
   },
@@ -18,15 +18,15 @@ const features = [
   },
   {
     number: "03",
-    title: "Arrive & It's All Done",
+    title: "Work Study and Stay Connected",
     description:
       "Everything is already set up \u2014 quality linen, stocked kitchenette, firewood ready, spa filled. No packing lists, no errands. Just walk in and relax.",
   },
   {
     number: "04",
-    title: "A Real Retreat, Not a Rental",
+    title: "Flexible hassle free terms",
     description:
-      "Light the fire, pour a glass, sink into the spa. This is a place designed to restore you \u2014 not just house you. You'll leave feeling like yourself again.",
+      "Weekly stays or longer. No complicated leases. Just move in, settle in, and focus on your work — everything else is taken care of.",
   },
 ];
 
@@ -49,18 +49,19 @@ export default function WhyBower() {
         <div className="why-hero-content">
           <SectionHeader
             label="Why Bower Cottage"
-            title='A respite that <em>restores</em> you'
+            title="A respite that <em>restores</em> you"
           />
           <p className="why-hero-body">
-            Medicine is relentless. You give everything to your patients, your team,
-            your shift &mdash; and there's rarely anything left for you. Bower Cottage exists
-            so you have somewhere quiet, beautiful, and already set up to come and simply
-            be still for a while.
+            Medicine is relentless. You give everything to your patients, your
+            team, your shift &mdash; and there's rarely anything left for you.
+            Bower Cottage exists so you have somewhere quiet, beautiful, and
+            already set up to come and simply be still for a while.
           </p>
           <p className="why-hero-sub">
-            Set on an acre-and-a-quarter in Blackheath, with the Blue Mountains National
-            Park at the back fence. Walk out the door and you're on trails through ancient
-            bushland, towering sandstone, and valleys that make the world feel very far away.
+            Set on an acre-and-a-quarter in Blackheath, with the Blue Mountains
+            National Park at the back fence. Walk out the door and you're on
+            trails through ancient bushland, towering sandstone, and valleys
+            that make the world feel very far away.
           </p>
         </div>
       </div>
