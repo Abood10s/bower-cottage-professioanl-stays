@@ -24,7 +24,7 @@ export default function Enquiry() {
           <div className="contact-items">
             <div className="contact-item">
               <span className="contact-icon">✉</span>
-              <a href="mailto:anna@bowercottage.com.au">anna@bowercottage.com.au</a>
+              <a href="mailto:info@bowercottage.com.au">info@bowercottage.com.au</a>
             </div>
             <div className="contact-item">
               <span className="contact-icon">✆</span>
@@ -43,7 +43,7 @@ export default function Enquiry() {
 
           <div className="enquiry-note">
             <p>
-              Located in Blackheath, NSW — on the ancestral lands of the Dharug and
+              Located in Blackheath, NSW - on the ancestral lands of the Dharug and
               Gundungurra peoples. Minutes from Katoomba and the Blue Mountains
               District Hospital.
             </p>

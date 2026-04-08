@@ -1,8 +1,8 @@
 import React from 'react'
 
 const items = [
-  { value: '$700', label: 'Per Week — Bower Above', isPrice: true },
-  { value: '$750', label: 'Per Week — Bower Cottage', isPrice: true },
+  { value: '$700', label: 'Per Week - Bower Above', isPrice: true },
+  { value: '$750', label: 'Per Week - Bower Cottage', isPrice: true },
   { value: 'All Bills', label: 'Included (Gas, Elec, WiFi)', isPrice: false },
   { value: 'Weekly', label: 'Professional Cleaning', isPrice: false },
   { value: 'Flexible', label: 'Short & Longer Term Stays', isPrice: false },

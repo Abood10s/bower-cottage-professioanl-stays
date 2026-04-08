@@ -53,7 +53,7 @@ export default function WhyBower() {
           />
           <p className="why-hero-body">
             Medicine is relentless. You give everything to your patients, your
-            team, your shift &mdash; and there's rarely anything left for you.
+            team, your shift - and there's rarely anything left for you.
             Bower Cottage exists so you have somewhere quiet, beautiful, and
             already set up to come and simply be still for a while.
           </p>

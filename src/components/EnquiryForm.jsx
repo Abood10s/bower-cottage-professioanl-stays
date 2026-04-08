@@ -98,8 +98,8 @@ export default function EnquiryForm() {
           <label htmlFor="accommodation">Accommodation</label>
           <select id="accommodation" name="accommodation">
             <option value="">Select accommodation...</option>
-            <option value="Bower Above — $700/week">Bower Above — $700/week</option>
-            <option value="Bower Cottage — $750/week">Bower Cottage — $750/week</option>
+            <option value="Bower Above - $700/week">Bower Above - $700/week</option>
+            <option value="Bower Cottage - $750/week">Bower Cottage - $750/week</option>
             <option value="Either / Flexible">Either / Flexible</option>
           </select>
         </div>
@@ -108,7 +108,7 @@ export default function EnquiryForm() {
           <textarea
             id="message"
             name="message"
-            placeholder="Tell us about your placement — duration, any specific requirements, or just say hello."
+            placeholder="Tell us about your placement - duration, any specific requirements, or just say hello."
           />
         </div>
         <div className="form-group full form-submit">
@@ -124,12 +124,12 @@ export default function EnquiryForm() {
 
       {status === 'success' && (
         <p className="form-success" role="alert">
-          Thank you for your enquiry — Anna will be in touch shortly.
+          Thank you for your enquiry - Anna will be in touch shortly.
         </p>
       )}
       {status === 'error' && (
         <p className="form-error" role="alert">
-          Something went wrong — please try again or email anna@bowercottage.com.au directly.
+          Something went wrong - please try again or email info@bowercottage.com.au directly.
         </p>
       )}
     </form>

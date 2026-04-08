@@ -25,7 +25,7 @@ export default function Footer() {
       </div>
 
       <p className="footer-note">
-        Blackheath NSW 2785 &nbsp;·&nbsp; anna@bowercottage.com.au &nbsp;·&nbsp;
+        Blackheath NSW 2785 &nbsp;·&nbsp; info@bowercottage.com.au &nbsp;·&nbsp;
         +61 404 483 720
       </p>
 
