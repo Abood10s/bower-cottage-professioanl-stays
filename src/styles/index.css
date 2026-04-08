@@ -378,7 +378,7 @@ img {
   border-bottom: none;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   .nav-links {
     display: none;
   }
@@ -1257,7 +1257,7 @@ img {
   font-weight: 300;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   .enquiry-section {
     padding: 5rem 6vw;
   }
@@ -1383,7 +1383,7 @@ img {
   cursor: not-allowed;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   .enquiry-form {
     padding: 2rem;
   }
