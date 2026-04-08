@@ -3,6 +3,7 @@
   --dark: #040415;
   --maroon: #842234;
   --maroon-deep: #6b1a2a;
+  --maroon-muted: #562c39dc;
   --gold: #c9a96e;
   --muted: #6b6560;
   --white: #fffefd;
@@ -637,7 +638,7 @@ img {
    ══════════════════════════════════════════ */
 
 .pricing-strip {
-  background: var(--maroon);
+  background: var(--maroon-muted);
   padding: 4.5rem 6vw;
 }
 

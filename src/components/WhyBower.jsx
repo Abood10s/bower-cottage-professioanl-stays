@@ -6,27 +6,27 @@ import { useScrollReveal } from "../hooks/useScrollReveal";
 const features = [
   {
     number: "01",
-    title: "The Proper Rest between shifts",
+    title: "Quiet, private and away from it all.",
     description:
-      "No traffic noise, no neighbours, no interruptions. Just birdsong, mountain air, and the kind of silence that actually lets you switch off.",
+      "Just birdsong and mountain air. Your own space to decompress and a double spa to relax in at the end of a long day.",
   },
   {
     number: "02",
-    title: "Beautiful Walks from the Door",
+    title: "Beautiful Walks from the Door.",
     description:
-      "The Grand Canyon Loop, Walls Cave, and the Grose Valley are minutes away. Step outside and explore some of the most stunning bushwalks in NSW.",
+      "The Grand Canyon Loop, Walls Cave and the superb escarpments of the Grose Valley are minutes away.",
   },
   {
     number: "03",
-    title: "Work Study and Stay Connected",
+    title: "Work Study and Stay Connected.",
     description:
-      "Everything is already set up \u2014 quality linen, stocked kitchenette, firewood ready, spa filled. No packing lists, no errands. Just walk in and relax.",
+      "Fast Fibre WiFi, a dedicated work desk and all the comforts of home. Perfect for completing paperwork, studying or staying in touch with family.",
   },
   {
     number: "04",
     title: "Flexible hassle free terms",
     description:
-      "Weekly stays or longer. No complicated leases. Just move in, settle in, and focus on your work — everything else is taken care of.",
+      "Weekly stays or longer. No complicated leases. Just move in, settle in and focus on your work - everything else is taken care of.",
   },
 ];
 
