@@ -1,13 +1,6 @@
 import React from "react";
 import OptimizedImage from "./OptimizedImage";
 
-const pills = [
-  "Arrive & Unwind — Everything Ready",
-  "Bushwalks from the Doorstep",
-  "Quiet, Private & Peaceful",
-  "National Park at the Back Fence",
-];
-
 export default function Hero() {
   return (
     <section className="hero">
@@ -35,16 +28,6 @@ export default function Hero() {
             real rest. No packing lists, no setup, no thinking just arrive,
             exhale, and let the mountain air do the rest.
           </p>
-        </div>
-        <div className="hero-right">
-          <div className="hero-pills">
-            {pills.map((pill) => (
-              <span className="pill" key={pill}>
-                {pill}
-              </span>
-            ))}
-          </div>
-          <h4 className="hero-subtitle">Get Started</h4>
           <div className="hero-actions">
             <a href="#enquiry" className="btn btn-teal">
               Enquire About a Stay
