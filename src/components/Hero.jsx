@@ -25,7 +25,7 @@ export default function Hero() {
           </h1>
           <p className="hero-desc">
             Fully furnished, weekly-cleaned accommodation for medical
-            professionals, locums,student doctors, and allied health workers -
+            professionals, locums, student doctors, and allied health workers -
             set on the edge of the Blue Mountains National Park.
           </p>
           <div className="hero-actions">
