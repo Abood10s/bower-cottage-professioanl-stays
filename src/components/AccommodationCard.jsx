@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import OptimizedImage from './OptimizedImage'
 
 export default function AccommodationCard({
@@ -11,11 +11,31 @@ export default function AccommodationCard({
   images = [],
 }) {
   const [activeImg, setActiveImg] = useState(0)
+  const touchStart = useRef(null)
+
+  const handleTouchStart = (e) => {
+    touchStart.current = e.touches[0].clientX
+  }
+
+  const handleTouchEnd = (e) => {
+    if (touchStart.current === null) return
+    const diff = touchStart.current - e.changedTouches[0].clientX
+    if (diff > 50) {
+      setActiveImg((prev) => (prev === images.length - 1 ? 0 : prev + 1))
+    } else if (diff < -50) {
+      setActiveImg((prev) => (prev === 0 ? images.length - 1 : prev - 1))
+    }
+    touchStart.current = null
+  }
 
   return (
     <div className="acc-card">
       {images.length > 0 && (
-        <div className="acc-card-gallery">
+        <div
+          className="acc-card-gallery"
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+        >
           <OptimizedImage
             src={images[activeImg]}
             alt={`${name} - photo ${activeImg + 1}`}
@@ -24,16 +44,25 @@ export default function AccommodationCard({
             sizes="(max-width: 768px) 100vw, 50vw"
           />
           {images.length > 1 && (
-            <div className="acc-gallery-dots">
-              {images.map((_, i) => (
-                <button
-                  key={i}
-                  className={`acc-gallery-dot${i === activeImg ? ' active' : ''}`}
-                  onClick={() => setActiveImg(i)}
-                  aria-label={`View photo ${i + 1}`}
-                />
-              ))}
-            </div>
+            <>
+              <button
+                className="acc-slider-arrow acc-slider-prev"
+                onClick={() => setActiveImg((prev) => (prev === 0 ? images.length - 1 : prev - 1))}
+                aria-label="Previous photo"
+              >
+                &#8249;
+              </button>
+              <button
+                className="acc-slider-arrow acc-slider-next"
+                onClick={() => setActiveImg((prev) => (prev === images.length - 1 ? 0 : prev + 1))}
+                aria-label="Next photo"
+              >
+                &#8250;
+              </button>
+              <div className="acc-slider-counter">
+                {activeImg + 1} / {images.length}
+              </div>
+            </>
           )}
         </div>
       )}
