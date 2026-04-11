@@ -1,4 +1,5 @@
 import React from "react";
+import { Toaster } from "react-hot-toast";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import PricingStrip from "./components/PricingStrip";
@@ -13,6 +14,23 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          duration: 5000,
+          style: {
+            fontFamily: "inherit",
+            fontSize: "0.9rem",
+            letterSpacing: "0.02em",
+          },
+          success: {
+            style: { background: "#5a8a5e", color: "#fff" },
+          },
+          error: {
+            style: { background: "#c25b42", color: "#fff" },
+          },
+        }}
+      />
       <Navbar />
       <main>
         <Hero />

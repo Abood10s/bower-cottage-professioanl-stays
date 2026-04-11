@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 import { z } from "zod";
 
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -69,13 +70,17 @@ export default function EnquiryForm() {
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
       .then(() => {
-        setStatus("success");
+        setStatus("idle");
         formRef.current.reset();
-        setTimeout(() => setStatus("idle"), 6000);
+        toast.success(
+          "Thank you for your enquiry — we will be in touch shortly.",
+        );
       })
       .catch(() => {
-        setStatus("error");
-        setTimeout(() => setStatus("idle"), 5000);
+        setStatus("idle");
+        toast.error(
+          "Something went wrong — please try again or email info@bowercottage.com.au directly.",
+        );
       });
   };
 
@@ -95,7 +100,6 @@ export default function EnquiryForm() {
             name="first_name"
             placeholder="Your First Name"
             aria-invalid={!!errors.first_name}
-
           />
           {errors.first_name && (
             <span className="form-field-error">{errors.first_name}</span>
@@ -109,7 +113,6 @@ export default function EnquiryForm() {
             name="last_name"
             placeholder="Your Last Name"
             aria-invalid={!!errors.last_name}
-
           />
           {errors.last_name && (
             <span className="form-field-error">{errors.last_name}</span>
@@ -123,7 +126,6 @@ export default function EnquiryForm() {
             name="email"
             placeholder="example@mail.com"
             aria-invalid={!!errors.email}
-
           />
           {errors.email && (
             <span className="form-field-error">{errors.email}</span>
@@ -137,7 +139,6 @@ export default function EnquiryForm() {
             name="phone"
             placeholder="04XX XXX XXX"
             aria-invalid={!!errors.phone}
-
           />
           {errors.phone && (
             <span className="form-field-error">{errors.phone}</span>
@@ -151,7 +152,6 @@ export default function EnquiryForm() {
             name="check_in"
             min={today}
             aria-invalid={!!errors.check_in}
-
           />
           {errors.check_in && (
             <span className="form-field-error">{errors.check_in}</span>
@@ -165,7 +165,6 @@ export default function EnquiryForm() {
             name="check_out"
             min={today}
             aria-invalid={!!errors.check_out}
-
           />
           {errors.check_out && (
             <span className="form-field-error">{errors.check_out}</span>
@@ -209,17 +208,6 @@ export default function EnquiryForm() {
         </div>
       </div>
 
-      {status === "success" && (
-        <p className="form-success" role="alert">
-          Thank you for your enquiry - Anna will be in touch shortly.
-        </p>
-      )}
-      {status === "error" && (
-        <p className="form-error" role="alert">
-          Something went wrong - please try again or email
-          info@bowercottage.com.au directly.
-        </p>
-      )}
     </form>
   );
 }
