@@ -9,7 +9,7 @@ const sharedAmenities = [
   'Well equipped kitchenette',
   'Slow combustion gas fire',
   'Air conditioning',
-  'Fast fibre WiFi',
+  'Fast NBN WiFi',
   'All electricity included',
   'Weekly professional clean',
   'Sunny deck with Weber BBQ',

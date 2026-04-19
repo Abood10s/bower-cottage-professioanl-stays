@@ -5,25 +5,25 @@ import { useScrollReveal } from "../hooks/useScrollReveal";
 
 const features = [
   {
-    number: "01",
+    number: "1",
     title: "Quiet, private and away from it all.",
     description:
       "Just birdsong and mountain air. Your own space to decompress and a double spa to relax in at the end of a long day.",
   },
   {
-    number: "02",
+    number: "2",
     title: "Beautiful Walks from the Door.",
     description:
       "The Grand Canyon Loop, Walls Cave and the superb escarpments of the Grose Valley are minutes away.",
   },
   {
-    number: "03",
+    number: "3",
     title: "Work Study and Stay Connected.",
     description:
-      "Fast Fibre WiFi, a dedicated work desk and all the comforts of home. Perfect for completing paperwork, studying or staying in touch with family.",
+      "Fast NBN WiFi, a dedicated work desk and all the comforts of home. Perfect for completing paperwork, studying or staying in touch with family.",
   },
   {
-    number: "04",
+    number: "4",
     title: "Flexible hassle free terms",
     description:
       "Weekly stays or longer. No complicated leases. Just move in, settle in and focus on your work - everything else is taken care of.",
@@ -49,13 +49,13 @@ export default function WhyBower() {
         <div className="why-hero-content">
           <SectionHeader
             label="Why Bower Cottage"
-            title="A respite that <em>restores</em> you"
+            title="More than just a <em>place to sleep</em>"
           />
           <p className="why-hero-body">
-            Medicine is relentless. You give everything to your patients, your
-            team, your shift - and there's rarely anything left for you.
-            Bower Cottage exists so you have somewhere quiet, beautiful, and
-            already set up to come and simply be still for a while.
+            We understand that professionals - especially those on locum
+            placements, need more than just four walls and a bed. You need
+            somewhere genuinely comfortable and restorative. Somewhere that
+            helps you show up at your best.
           </p>
           <p className="why-hero-sub">
             Set on an acre-and-a-quarter in Blackheath, with the Blue Mountains

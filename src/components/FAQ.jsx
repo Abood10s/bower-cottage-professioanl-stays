@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "What\u2019s included in the weekly rate?",
     answer:
-      "Everything. Gas, electricity, WiFi, weekly professional cleaning, all linen and towels, toiletries, and use of all appliances and furnishings. There are no hidden extras.",
+      "Caretaker onsite. Everything. Gas, electricity, fast NBN WiFi, weekly professional cleaning, all linen and towels. Double spa with rainwater shower and shampoo, conditioner, body wash. Fully equipped kitchenette with fridge, small freezer, microwave/convection oven, rice cooker, induction cooktop, toaster etc plus pantry items like olive oil, vinegar, soy sauce etc. Selection of teas, plunger coffee, hot chocolate. Washing machine, dryer. Lockable storage box for hiking, climbing equipment etc. Scrabble, chess board, cards. Instant, slow combustion style gas log fire, air conditioning, electric blankets, hot water bottle. Marshall Bluetooth Speaker and 48 inch TV. Weber BBQ.",
   },
   {
     question: "Do I need to provide anything before my booking is confirmed?",
