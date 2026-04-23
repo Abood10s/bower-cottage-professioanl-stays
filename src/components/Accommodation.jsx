@@ -28,7 +28,7 @@ const properties = [
       'A beautifully appointed, self contained studio perched above and to the side of the main property, with sweeping views and a serene sense of elevation. Light-filled, modern, and private - your own treehouse in the Blue Mountains.',
     amenities: sharedAmenities,
     airbnbUrl: 'https://airbnb.com/h/abowerabove',
-    images: ['/assets/bower-above-1.jpg', '/assets/bower-above-2.jpg', '/assets/bower-both-s5.jpg'],
+    images: ['/assets/bower-above-1.jpg', '/assets/bower-above-2.jpg', '/assets/bower-both-s5.jpg', '/assets/newabove1.jpeg', '/assets/newabove2.jpeg', '/assets/newabove3.jpeg', '/assets/newabove4.jpeg', '/assets/newabove6.jpeg'],
   },
   {
     type: 'Cottage',
@@ -38,7 +38,7 @@ const properties = [
       'A charming, fully self-contained cottage set within the beautiful grounds. Private, peaceful, and thoughtfully furnished - everything you need for a restorative stay in the mountains, without a thing to worry about.',
     amenities: sharedAmenities,
     airbnbUrl: 'https://airbnb.com/h/bowercottage',
-    images: ['/assets/bower-cottage-1.jpg', '/assets/bower-cottage-2.jpg', '/assets/bower-cottage-s3.jpg', '/assets/bower-cottage-s4.jpg', '/assets/bower-both-s5.jpg'],
+    images: ['/assets/bower-cottage-1.jpg', '/assets/bower-cottage-2.jpg', '/assets/bower-cottage-s3.jpg', '/assets/bower-cottage-s4.jpg', '/assets/bower-both-s5.jpg', '/assets/newcottage1.jpeg', '/assets/newcottage2.jpeg'],
   },
 ]
 
