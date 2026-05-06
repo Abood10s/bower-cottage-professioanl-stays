@@ -38,7 +38,7 @@ const properties = [
       'A charming, fully self-contained cottage set within the beautiful grounds. Private, peaceful, and thoughtfully furnished - everything you need for a restorative stay in the mountains, without a thing to worry about.',
     amenities: sharedAmenities,
     airbnbUrl: 'https://airbnb.com/h/bowercottage',
-    images: ['/assets/bower-cottage-1.jpg', '/assets/bower-cottage-2.jpg', '/assets/bower-cottage-s3.jpg', '/assets/bower-cottage-s4.jpg', '/assets/bower-both-s5.jpg', '/assets/newcottage1.jpeg', '/assets/newcottage2.jpeg'],
+    images: ['/assets/bower-cottage-2.jpg', '/assets/cottage-lc-1.jpeg', '/assets/cottage-lc-2.jpeg', '/assets/cottage-lc-3.jpeg', '/assets/cottage-lc-4.jpeg', '/assets/cottage-lc-5.jpeg', '/assets/cottage-lc-6.jpeg'],
   },
 ]
 
